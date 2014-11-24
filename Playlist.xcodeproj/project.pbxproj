@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF449CCD1A211414006224D7 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF449CCC1A211414006224D7 /* View.swift */; };
+		AF449CCF1A2115EB006224D7 /* LittleView0.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF449CCE1A2115EB006224D7 /* LittleView0.swift */; };
+		AF449CD11A2116D2006224D7 /* LittleView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF449CD01A2116D2006224D7 /* LittleView1.swift */; };
+		AF449CD31A21170F006224D7 /* LittleView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF449CD21A21170F006224D7 /* LittleView2.swift */; };
+		AF449CD51A212BCA006224D7 /* 03.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AF449CD41A212BCA006224D7 /* 03.mp3 */; };
+		AF449CD71A212DC6006224D7 /* 06.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AF449CD61A212DC6006224D7 /* 06.mp3 */; };
 		AFD8DAF41A20DF1F00C42DBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD8DAF31A20DF1F00C42DBE /* AppDelegate.swift */; };
 		AFD8DAF61A20DF1F00C42DBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD8DAF51A20DF1F00C42DBE /* ViewController.swift */; };
 		AFD8DAF91A20DF1F00C42DBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFD8DAF71A20DF1F00C42DBE /* Main.storyboard */; };
@@ -26,6 +32,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF449CCC1A211414006224D7 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		AF449CCE1A2115EB006224D7 /* LittleView0.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LittleView0.swift; sourceTree = "<group>"; };
+		AF449CD01A2116D2006224D7 /* LittleView1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LittleView1.swift; sourceTree = "<group>"; };
+		AF449CD21A21170F006224D7 /* LittleView2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LittleView2.swift; sourceTree = "<group>"; };
+		AF449CD41A212BCA006224D7 /* 03.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 03.mp3; sourceTree = "<group>"; };
+		AF449CD61A212DC6006224D7 /* 06.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 06.mp3; sourceTree = "<group>"; };
 		AFD8DAEE1A20DF1F00C42DBE /* Playlist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Playlist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFD8DAF21A20DF1F00C42DBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFD8DAF31A20DF1F00C42DBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +91,10 @@
 			children = (
 				AFD8DAF31A20DF1F00C42DBE /* AppDelegate.swift */,
 				AFD8DAF51A20DF1F00C42DBE /* ViewController.swift */,
+				AF449CCC1A211414006224D7 /* View.swift */,
+				AF449CCE1A2115EB006224D7 /* LittleView0.swift */,
+				AF449CD01A2116D2006224D7 /* LittleView1.swift */,
+				AF449CD21A21170F006224D7 /* LittleView2.swift */,
 				AFD8DAF71A20DF1F00C42DBE /* Main.storyboard */,
 				AFD8DAFA1A20DF1F00C42DBE /* Images.xcassets */,
 				AFD8DAFC1A20DF1F00C42DBE /* LaunchScreen.xib */,
@@ -90,6 +106,8 @@
 		AFD8DAF11A20DF1F00C42DBE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AF449CD41A212BCA006224D7 /* 03.mp3 */,
+				AF449CD61A212DC6006224D7 /* 06.mp3 */,
 				AFD8DAF21A20DF1F00C42DBE /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -192,9 +210,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF449CD71A212DC6006224D7 /* 06.mp3 in Resources */,
 				AFD8DAF91A20DF1F00C42DBE /* Main.storyboard in Resources */,
 				AFD8DAFE1A20DF1F00C42DBE /* LaunchScreen.xib in Resources */,
 				AFD8DAFB1A20DF1F00C42DBE /* Images.xcassets in Resources */,
+				AF449CD51A212BCA006224D7 /* 03.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +233,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFD8DAF61A20DF1F00C42DBE /* ViewController.swift in Sources */,
+				AF449CCF1A2115EB006224D7 /* LittleView0.swift in Sources */,
 				AFD8DAF41A20DF1F00C42DBE /* AppDelegate.swift in Sources */,
+				AF449CD11A2116D2006224D7 /* LittleView1.swift in Sources */,
+				AF449CCD1A211414006224D7 /* View.swift in Sources */,
+				AF449CD31A21170F006224D7 /* LittleView2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +429,7 @@
 				AFD8DB0F1A20DF1F00C42DBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AFD8DB101A20DF1F00C42DBE /* Build configuration list for PBXNativeTarget "PlaylistTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +438,7 @@
 				AFD8DB121A20DF1F00C42DBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
