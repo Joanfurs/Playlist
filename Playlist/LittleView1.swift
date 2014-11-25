@@ -3,9 +3,12 @@ import UIKit
 
 class LittleView1 : UIView {
 
+	let littleRectangle: UIView = UIView();
+
 	override init() {
 		super.init(frame: CGRectZero);
-		
+		littleRectangle.backgroundColor = UIColor.whiteColor();
+		addSubview(littleRectangle);
 		autoresizingMask = UIViewAutoresizing.FlexibleWidth | UIViewAutoresizing.FlexibleHeight;
 		backgroundColor = UIColor.blackColor();
 	}
@@ -67,31 +70,26 @@ class LittleView1 : UIView {
 		CGContextStrokePath(c);
 		
 		// Placing small rectangle on a time line
-		
+
 		var r: CGRect = CGRectMake(
 			applicationFrame.origin.x + 10,
-			( bounds.size.height - (bounds.size.height - image!.size.height)/4) - 5,
-			5,
-			10);
+			( bounds.size.height - (bounds.size.height - image!.size.height)/4) - 8,
+			8,
+			16);
+		
+		littleRectangle.frame = r;
 
-		CGContextBeginPath(c);
-		CGContextAddRect(c, r);
-		CGContextSetRGBFillColor(c, 1.0, 0.0, 0.0, 1.0);
-		CGContextStrokePath(c);
-		
 		// Trying to animate rectangle
-		
-		UIView.animateWithDuration(10.0,
-			delay: 0.0,
+
+		UIView.animateWithDuration(236.0,
+			delay: 1.0,
 			options:  UIViewAnimationOptions.CurveLinear,
 			animations: {
-			r = CGRectMake(
-					self.bounds.size.width - 10,
-					self.bounds.size.height - (self.bounds.size.height - image!.size.height)/4,
-					5,
-					10
-					);
+				self.littleRectangle.center = CGPointMake(
+					applicationFrame.origin.x + applicationFrame.width - 14,
+					self.littleRectangle.center.y);
 			},
 			completion: nil);
-}
+		
+		}
 }

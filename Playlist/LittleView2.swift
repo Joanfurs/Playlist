@@ -6,28 +6,25 @@ class LittleView2 : UIView {
 	let label: UILabel = UILabel();
 
 	override init() {
-	
 		super.init(frame: CGRectZero);
 		autoresizingMask = UIViewAutoresizing.FlexibleWidth | UIViewAutoresizing.FlexibleHeight;
 		backgroundColor = UIColor.blackColor();
-		
+		label.backgroundColor = UIColor.clearColor();
+		label.textColor = UIColor.whiteColor();
+		addSubview(label);
+		bringSubviewToFront(label)
 	}
 
 	required init(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder);
 		backgroundColor = UIColor.redColor();
-	
-		label.backgroundColor = UIColor.clearColor();
-		label.textColor = UIColor.whiteColor();
-		addSubview(label);
-		bringSubviewToFront(label)
 	}
 	
 	override func layoutSubviews() {
 	
 	// Trying to create rectangle for animation using label and special character
 	
-		label.font = UIFont.systemFontOfSize(24);
+		label.font = UIFont.systemFontOfSize(26);
 		let attributes2: [NSObject: AnyObject] = [NSFontAttributeName: label.font];
 		label.text = "∎";
 		let textSize: CGSize = label.text!.sizeWithAttributes(attributes2);
@@ -35,8 +32,8 @@ class LittleView2 : UIView {
 		let applicationFrame: CGRect = screen.applicationFrame;
 
 		label.frame = CGRectMake(
-			applicationFrame.origin.x + 10,
-			bounds.size.height - 10,
+			applicationFrame.origin.x + 8,
+			bounds.size.height - 63,
 			textSize.width,
 			textSize.height);
 			}
@@ -94,8 +91,8 @@ class LittleView2 : UIView {
 		
 		// Trying to animate label
 	
-		UIView.animateWithDuration(24.5,
-			delay: 0.0,
+		UIView.animateWithDuration(169.0,
+			delay: 1.0,
 			options: UIViewAnimationOptions.CurveLinear,
 			animations: {
 				
